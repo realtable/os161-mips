@@ -1,0 +1,31 @@
+{
+    "name": "os161-mips",
+    "displayName": "OS/161 MIPS Syntax Highlighting",
+    "description": "Provides syntax highlighting for OS/161 MIPS",
+    "version": "0.0.1",
+    "publisher": "realtable",
+    "homepage": "https://github.com/realtable/os161-mips",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/realtable/os161-mips.git"
+    },
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mips",
+            "aliases": ["MIPS", "mips"],
+            "extensions": [".s", ".S", ".mips", ".asm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mips",
+            "scopeName": "source.mips",
+            "path": "./syntaxes/mips.tmLanguage.json"
+        }]
+    }
+}
